@@ -11,7 +11,7 @@ data$Global_active_power <- as.numeric(data$Global_active_power)
 
 subsetdata <- subset(data, Date == "2007-02-01" | Date =="2007-02-02")
 
-## plot globalactivepower vs date&time
-#png("plot2.png", width=480, height=480)
+
+png("plot2.png", width=480, height=480)
 with(subsetdata, plot(FullTimeDate, Global_active_power, type="l", xlab="Day", ylab="Global Active Power (kilowatts)"))
-#dev.off()
+dev.off()
